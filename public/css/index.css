@@ -1,89 +1,63 @@
-.btn:hover {
-  color: red;
-  background-color: yellow;
-}
-.link:hover ~ h1 {
-  background-color: green;
+.card {
 }
 
-.link:visited {
-  color: yellow;
+p {
+  background-color: rgba(8, 40, 109, 0.507);
 }
-
-#sidebar .link:link {
-  color: red;
-}
-
-button:active {
-  background-color: blue;
-}
-
-button:focus {
-  color: orange;
-}
-
-#target:target {
-  color: white;
-  background-color: green;
-}
-
-input[type='checkbox']:checked ~ div {
-  color: white;
-  background-color: blue;
-}
-
-p:lang(uk) {
-  color: blue;
-}
-
-input:enabled {
-  color: red;
-  background-color: yellow;
-}
-
-input:disabled {
-  background-color: rgb(207, 207, 19);
-}
-
-input:read-write {
-  background-color: rgb(250, 250, 32);
-}
-
-input:read-only {
-  background-color: rgb(255, 255, 0);
-}
-
-input:disabled {
-  background-color: rgb(207, 207, 19);
-}
-
-input:valid {
+.card > p {
   color: green;
-}
-input:invalid {
-  color: red;
-}
-
-input:optional ~ label {
-  color: red;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
 }
 
-input:out-of-range {
-  color: red;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(255, 238, 0);
+  -webkit-text-stroke: 1px rgb(238, 40, 188);
+  direction: rtl;
 }
 
-input:in-range {
-  color: red;
-}
-input:placeholder-shown {
-  background-color: red;
-}
-
-button:focus-within {
-  color: white;
-  background-color: yellow;
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+  text-align: justify;
 }
 
-input:invalid {
-  background-color: red;
+span {
+  text-align: left;
+  text-transform: capitalize;
+
+  text-decoration: underline solid red;
+}
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+pre {
+  tab-size: 4;
+}
+
+* {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+span {
+  font-size: larger;
+  font-weight: lighter;
+  font-style: oblique;
+}
+.test {
+  display: none;
+}
+.block {
+  display: block;
+  background: rgb(197, 182, 182);
+  margin: auto;
+  width: 50%;
 }
