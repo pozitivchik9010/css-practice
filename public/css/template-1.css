@@ -133,3 +133,30 @@
   font-size: 19px;
   padding: 9px;
 }
+
+h1 {
+}
+
+.plans_card:nth-child(2) {
+  visibility: hidden;
+}
+
+.hero_text {
+  background: gray;
+  text-align: left;
+  max-width: 250px;
+  width: 200px;
+
+  hyphens: manual;
+  overflow: auto;
+  resize: both;
+  word-spacing: 4px;
+}
+
+.hero_title {
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  height: 65px;
+  overflow: hidden;
+}
