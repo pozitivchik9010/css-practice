@@ -14,10 +14,23 @@
 		<h1 class="hero_title">{{title}}</h1>
 		<p class="hero_text">{{text}}</p>
 	</div>
-	<img src="{{photo}}" alt="Hero image" class="hero_image">
+	<div class="hero_slider">
+		<div class="hero_slider_icon hero_slider_left">{{left}}</div>
+		<img src="{{photo}}" alt="Hero image" class="hero_image">
+		<div class="hero_slider_icon hero_slider_right">{{right}}</div>
+	</div>
 
 </div>
 {{/with}}
+
+<input type="text" class="input">
+
+<div class="modal">
+	{{hero.text}} {{hero.title}}
+	{{!-- <img src="" alt="" class="modal_image"> --}}
+
+	<div class="modal_text">{{hero.text}} {{hero.text}}</div>
+</div>
 
 <main class="blog">
 	{{#each blog}}
