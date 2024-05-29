@@ -49,8 +49,18 @@
 
 	{{/with}}
 
-</main>
 
+	{{#each advantages}}
+
+	<div class="advantage">
+		<strong>{{title}}</strong>
+		<p>{{text}}</p>
+	</div>
+
+
+	{{/each}}
+
+</main>
 
 <div class="advantages">
 	{{#each advantages}}
@@ -62,11 +72,12 @@
 
 
 	{{/each}}
+
 </div>
 
 <footer class=" footer">
 	<div>
-		{{> logo}}
+		{{> logo data='M'}}
 		<span class="footer_copyright">Copyright 2023-2024</span>
 	</div>
 
